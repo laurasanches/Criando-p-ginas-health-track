@@ -14,7 +14,7 @@
 
 <body>
     <!-- menu de navegação -->
-    <nav id="icon-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="icon-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <i class="bi bi-activity navbar-brand" href="#"></i>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -22,7 +22,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <h1 style="text-align: center; color: white;">Cadastro</h1>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: blue;">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Início</a>
                     </li>
@@ -55,21 +56,22 @@
     <!-- fim menu de navegação  -->
 
     <!-- começando formulário de perguntas cadastro  -->
-    <form class="formulario" >
-        <div class="my-3 col-6">
+    <div class="estilizacao-form" style="text-align: center; display: flex; flex-direction: row; justify-content: center;">
+    <form>
+        <div class="my-3 col-12">
             <label for="name" class="form-label">Nome Completo</label>
-            <input type="name" class="form-control" id="name" required>
+            <input style="border: black solid 1px;" type="name" class="form-control" id="name" required>
             
         </div>
         
-        <div class="my-3 col-6">
+        <div class="my-3 col-12">
             <label for="date" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="date" required>
+            <input style="border: black solid 1px;" type="date" class="form-control" id="date" required>
         </div>
 
-        <div class="my-3 col-6">
+        <div class="my-3 col-12">
             <label for="text">Gênero</label>
-            <select class="form-select my-3" aria-label="Default select example" required>
+            <select style="border: black solid 1px;" class="form-select my-3" aria-label="Default select example" required>
                 <option selected>-</option>
                 <option value="1">Feminino</option>
                 <option value="2">Masculino</option>
@@ -77,27 +79,30 @@
             </select>
         </div>
 
-        <div class="my-3 col-6">
+        <div class="my-3 col-12">
             <label for="height" class="form-label">Altura</label>
-            <input type="height" class="form-control" id="height" required>
+            <input style="border: black solid 1px;" type="height" class="form-control" id="height" required>
             
         </div>
         
-        <div class="my-3 col-6">
+        <div class="my-3 col-12">
             <label for="InputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="InputEmail" required>
+            <input style="border: black solid 1px;" type="email" class="form-control" id="InputEmail" required>
             
         </div>
 
-        <div class="my-3 col-6">
+        <div class="my-3 col-12">
             <label for="Password" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="Password" required>
+            <input style="border: black solid 1px;" type="password" class="form-control" id="Password" required>
             
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
 
     </form>
+    </div>
         <!-- acabando formulário de perguntas cadastro -->
+        
+    
 </body>
 
 </html>
